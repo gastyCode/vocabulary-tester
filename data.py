@@ -1,4 +1,6 @@
-data = {
+file_name = "trainer.txt"
+
+words = {
     "studijny plan": "curriculum",
     "internat": "dormitory",
     "riadny student": "full-time student",
