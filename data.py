@@ -1,4 +1,4 @@
-file_name = "trainer.voc"
+file_name = "trainer.vocab"
 
 words = {
     "studijny plan": "curriculum",
