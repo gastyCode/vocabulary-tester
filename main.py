@@ -83,10 +83,13 @@ def learn(words_list):
 
 def get_file_data():
     words = []
-    with open(data.file_name) as data_file:
-        for line in data_file.read().splitlines():
-            parsed_line = tuple(line.split(","))
-            words.append(parsed_line)
+
+    if os.path.isfile(data.file_name):
+        with open(data.file_name) as data_file:
+            for line in data_file.read().splitlines():
+                parsed_line = tuple(line.split(","))
+                words.append(parsed_line)
+
     return words
 
 
@@ -97,9 +100,9 @@ def read_mode():
         clear_console()
         print_header()
         cprint("__________________________________________________________________________________________________________________\n\n", fg="green")
-        cprint("'train'      - train only words you don't know (YOU NEED TO USE 'learn-all' COMMAND AT LEAST ONCE TO USE THIS MODE)", fg="yellow")
+        cprint("'train'      - train only words you don't know (YOU NEED TO USE 'train-all' COMMAND AT LEAST ONCE TO USE THIS MODE)", fg="yellow")
         cprint("'train-all'  - train all the words you need to know", fg="yellow")
-        cprint("'learn'      - learn words that you don't know", fg="yellow")
+        cprint("'learn'      - learn words that you don't know (YOU NEED TO USE 'train-all' COMMAND AT LEAST ONCE TO USE THIS MODE)", fg="yellow")
         cprint("'learn-all'  - learn all the words you need to know", fg="yellow")
         user_mode = input("Select mode: ")
     return Modes(user_mode.lower())
