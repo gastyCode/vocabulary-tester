@@ -1,4 +1,4 @@
-file_name = "trainer.txt"
+file_name = "trainer.voc"
 
 words = {
     "studijny plan": "curriculum",
@@ -55,5 +55,25 @@ words = {
     "nadradeny": "superior",
     "ustredna": "switchboard",
     "ukoncit": "terminate",
-    "vyuzit": "utilize"
+    "vyuzit": "utilize",
+    "vasnivy": "passionate",
+    "pre nic": "it is all for nothing",
+    "priemerny prezenter": "mediocre presenter",
+    "drzat sa spat": "hold back",
+    "publikum": "audience",
+    "bludit": "ramble",
+    "rozsah pozornosti": "attention spans",
+    "budovanie vztahu": "build rapport",
+    "ovladac": "handheld remote",
+    "dostat vypadok": "go blank",
+    "prejst z temy": "move off the topic",
+    "znovuobjavenie obrazku": "image reappears",
+    "pohlad nadol": "glance down",
+    "drzat ocny kontakt": "mantain eye contact",
+    "pocmurna tema": "grim topic",
+    "pokusenie": "temptation",
+    "uviest komentare": "give comments",
+    "laskave": "gracious",
+    "drzat sa na vrchole": "keep to the high ground",
+    "narocne publikum": "challenging audience"
 }
