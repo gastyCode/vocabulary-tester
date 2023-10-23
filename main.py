@@ -96,8 +96,8 @@ def read_mode():
     while user_mode.lower() not in modes:
         clear_console()
         print_header()
-        cprint("_____________________________________________________________________________________________________\n\n", fg="green")
-        cprint("'train'      - train only words you don't know (YOU NEED TO train-all AT LEAST ONCE TO USE THIS MODE)", fg="yellow")
+        cprint("__________________________________________________________________________________________________________________\n\n", fg="green")
+        cprint("'train'      - train only words you don't know (YOU NEED TO USE 'learn-all' COMMAND AT LEAST ONCE TO USE THIS MODE)", fg="yellow")
         cprint("'train-all'  - train all the words you need to know", fg="yellow")
         cprint("'learn'      - learn words that you don't know", fg="yellow")
         cprint("'learn-all'  - learn all the words you need to know", fg="yellow")
